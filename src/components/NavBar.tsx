@@ -1,16 +1,6 @@
-import { useState } from "react";
-
 export default function NavBar() {
-    const [searchInput, setSearchInput] = useState("");
-
-    function handleInputEvent() {
-        const input = document.getElementById("search-input");
-        if (input instanceof HTMLInputElement) setSearchInput(input.value);
-        console.log(searchInput);
-    }
-
     return (
-        <header className="flex justify-between py-3 px-5 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 gap-6">
+        <header className="flex justify-between py-3 px-4 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 gap-6">
             <div className="flex items-center gap-3">
                 <img
                     src="/logo.svg"
@@ -49,7 +39,6 @@ export default function NavBar() {
                     <input
                         type="search"
                         id="search-input"
-                        onInput={handleInputEvent}
                         className="block text-ellipsis w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-600 focus:border-green-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-600 dark:focus:border-green-600"
                         placeholder="Search my chats"
                         required
