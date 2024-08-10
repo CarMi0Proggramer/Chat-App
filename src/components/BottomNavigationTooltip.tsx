@@ -3,24 +3,27 @@ import { ReactNode } from "react";
 type BottomNavigationTooltipParams = {
     tooltipId: string;
     title: string;
+    href: string;
     children: ReactNode;
 };
 
 export default function BottomNavigationTooltip({
     tooltipId,
     title,
+    href,
     children,
 }: BottomNavigationTooltipParams) {
     return (
         <>
-            <button
+            <a
+                href={href}
                 data-tooltip-target={tooltipId}
                 type="button"
                 className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
             >
                 {children}
                 <span className="sr-only">{title}</span>
-            </button>
+            </a>
             <div
                 id={tooltipId}
                 role="tooltip"

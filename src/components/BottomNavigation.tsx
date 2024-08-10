@@ -1,10 +1,14 @@
 import BottomNavigationTooltip from "./BottomNavigationTooltip";
 
-export function BottomNavigation() {
+export default function BottomNavigation() {
     return (
         <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
             <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-                <BottomNavigationTooltip tooltipId="tooltip-home" title="Home">
+                <BottomNavigationTooltip
+                    tooltipId="tooltip-home"
+                    title="Home"
+                    href="/"
+                >
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
                         aria-hidden="true"
@@ -17,6 +21,7 @@ export function BottomNavigation() {
                 <BottomNavigationTooltip
                     tooltipId="tooltip-messages"
                     title="Messages"
+                    href="/messages"
                 >
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
@@ -62,6 +67,7 @@ export function BottomNavigation() {
                 <BottomNavigationTooltip
                     tooltipId="tooltip-settings"
                     title="Settings"
+                    href="/settings"
                 >
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
@@ -81,6 +87,7 @@ export function BottomNavigation() {
                 <BottomNavigationTooltip
                     tooltipId="tooltip-profile"
                     title="Profile"
+                    href="/profile"
                 >
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"

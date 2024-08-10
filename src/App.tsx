@@ -1,11 +1,20 @@
-import { BottomNavigation } from "./components/BottomNavigation";
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Chat from "./pages/Chat";
+import Settings from "./pages/Settings";
+import Profile from "./pages/Profile";
 
 function App() {
     return (
         <>
-            <NavBar></NavBar>
-            <BottomNavigation></BottomNavigation>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/messages" element={<Chat />} />
+                    <Route path="/settings" element={<Settings />} />
+                    <Route path="/profile" element={<Profile />} />
+                </Routes>
+            </Router>
         </>
     );
 }
