@@ -4,11 +4,11 @@ export default function NavBar() {
             <div className="flex items-center gap-3">
                 <img
                     src="/logo.svg"
-                    alt="Chatty Logo"
+                    alt="Chat App Logo"
                     className="size-6 sm:size-8"
                 />
                 <span className="text-sm sm:text-xl font-bold uppercase text-green-600 dark:text-green-500">
-                    Chatty
+                    Chat App
                 </span>
             </div>
 
