@@ -2,7 +2,7 @@ export default function LoginForm() {
     return (
         <main>
             <div className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex justify-center">
-                <div className="max-w-screen-xl m-10 bg-white dark:bg-gray-700 shadow rounded-lg overflow-hidden flex justify-center flex-1">
+                <div className="max-w-screen-xl m-12 bg-white dark:bg-gray-700 shadow rounded-lg overflow-hidden flex justify-center flex-1">
                     <div className="lg:w-1/2 xl:w-5/12 p-12">
                         <div className="flex flex-col items-center">
                             <div className="w-full flex-1 mt-8">
@@ -45,17 +45,17 @@ export default function LoginForm() {
 
                                 <div className="mx-auto max-w-xs">
                                     <input
-                                        className="dark:text-black w-full px-6 py-3 rounded-lg font-medium bg-gray-100 border border-green-300 focus:outline-green-400 placeholder-gray-500 text-sm focus:outline-none"
+                                        className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
                                         type="email"
                                         placeholder="Email"
                                     />
                                     <input
-                                        className="dark:text-black w-full px-6 py-3 rounded-lg font-medium bg-gray-100 border border-green-300 focus:outline-green-400 placeholder-gray-500 text-sm focus:outline-none mt-5"
+                                        className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
                                         type="password"
                                         placeholder="Password"
                                     />
                                     <button
-                                        className="mt-5 tracking-wide font-semibold bg-green-500 dark:bg-green-600 w-full py-3 rounded-lg flex items-center justify-center focus:ring-4
+                                        className="text-gray-100 mt-5 tracking-wide font-semibold bg-green-500 dark:bg-green-600 w-full py-3 rounded-lg flex items-center justify-center focus:ring-4
                                     focus:ring-green-500/50 dark:focus:ring-green-600/40 focus:outline-none"
                                     >
                                         <svg
@@ -72,20 +72,13 @@ export default function LoginForm() {
                                         </svg>
                                         <span className="ml-">Sign In</span>
                                     </button>
-                                    <p className="mt-6 text-xs text-gray-600 dark:text-white text-center">
-                                        I agree to abide by Cartesian Kinetics{" "}
+                                    <p className="mt-6 text-sm text-gray-600 dark:text-white text-center">
+                                        Don't have an account?{" "}
                                         <a
-                                            href="#"
-                                            className="border-b border-gray-500 border-dotted"
+                                            href="/register"
+                                            className="border-b border-gray-500 underline"
                                         >
-                                            Terms of Service
-                                        </a>{" "}
-                                        and its{" "}
-                                        <a
-                                            href="#"
-                                            className="border-b border-gray-500 border-dotted"
-                                        >
-                                            Privacy Policy
+                                            create one
                                         </a>
                                     </p>
                                 </div>
@@ -93,7 +86,7 @@ export default function LoginForm() {
                         </div>
                     </div>
                     <div className="flex-1 bg-green-300 dark:bg-green-400 text-center hidden lg:flex">
-                        <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat bg-[url('/images/login_bg.png')]"></div>
+                        <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat bg-[url('/images/login_bg.webp')]"></div>
                     </div>
                 </div>
             </div>
