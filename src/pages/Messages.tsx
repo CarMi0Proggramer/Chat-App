@@ -1,5 +1,11 @@
+import Chat from "../components/Chat";
 import Layout from "../layouts/Layout";
 
-export default function Chat() {
-    return <Layout />;
+export default function Chats() {
+    return (
+        <Layout>
+            <Chat/>
+        </Layout>
+    );
 }
+
