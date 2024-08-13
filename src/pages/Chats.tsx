@@ -4,8 +4,11 @@ import Layout from "../layouts/Layout";
 export default function Chats() {
     return (
         <Layout>
-            <Chat/>
+            <Chat
+                name="Carlos"
+                url="https://flowbite.com/favicon.ico"
+                lastMessage="None"
+            />
         </Layout>
     );
 }
-
