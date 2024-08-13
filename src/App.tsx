@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 
 const Home = lazy(() => import("./pages/Home"));
-const Messages = lazy(() => import("./pages/Messages"));
+const Chats = lazy(() => import("./pages/Chats"));
 const Settings = lazy(() => import("./pages/Settings"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Register = lazy(() => import("./pages/Register"));
@@ -18,7 +18,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/login" element={<Login />} />
-                        <Route path="/messages" element={<Messages />} />
+                        <Route path="/chats" element={<Chats />} />
                         <Route path="/settings" element={<Settings />} />
                         <Route path="/profile" element={<Profile />} />
                     </Routes>
