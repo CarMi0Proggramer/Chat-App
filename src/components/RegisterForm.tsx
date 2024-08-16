@@ -1,7 +1,7 @@
 export default function RegisterForm() {
     return (
         <main>
-            <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center">
+            <div className="bg-gray-100 my-[64px] dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center">
                 <div className="max-w-screen-xl m-5 bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden flex justify-center flex-1">
                     <div className="lg:w-1/2 xl:w-5/12 px-12 py-8">
                         <div className="flex flex-col items-center">

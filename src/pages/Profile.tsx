@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout";
 export default function Profile() {
     return (
         <Layout>
-            <main className="w-full self-center max-w-screen-2xl flex justify-center mb-16 px-4 bg-transparent">
+            <main className=" my-[64px] w-full self-center max-w-screen-2xl flex justify-center mb-16 px-4 bg-transparent">
                 <section className="flex flex-col w-full my-6 dark:text-gray-300 gap-y-4">
                     <div className="bg-gray-100 dark:bg-gray-800 rounded-lg">
                         <div className="flex flex-col lg:flex-row">
