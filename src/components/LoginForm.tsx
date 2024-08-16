@@ -1,8 +1,8 @@
 export default function LoginForm() {
     return (
         <main>
-            <div className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex justify-center">
-                <div className="max-w-screen-xl m-12 bg-white dark:bg-gray-700 shadow rounded-lg overflow-hidden flex justify-center flex-1">
+            <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center">
+                <div className="max-w-screen-xl m-12 bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden flex justify-center flex-1">
                     <div className="lg:w-1/2 xl:w-5/12 p-12">
                         <div className="flex flex-col items-center">
                             <div className="w-full flex-1 mt-8">
@@ -37,59 +37,59 @@ export default function LoginForm() {
                                     </button>
                                 </div>
 
-                <div className="my-10 border-b text-center">
-                    <div className="leading-none px-2 inline-block text-sm text-gray-600 dark:text-white tracking-wide font-medium bg-white dark:bg-gray-700 transform translate-y-1/2">
-                    Or sign In with your E-mail
+                                <div className="my-10 border-b text-center">
+                                    <div className="leading-none px-2 inline-block text-sm text-gray-600 dark:text-white tracking-wide font-medium bg-white dark:bg-gray-800 transform translate-y-1/2">
+                                        Or sign In with your E-mail
+                                    </div>
+                                </div>
+
+                                <div className="mx-auto max-w-xs">
+                                    <input
+                                        className="dark:text-gray-200 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400"
+                                        type="email"
+                                        placeholder="Email"
+                                    />
+                                    <input
+                                        className="dark:text-gray-200 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400"
+                                        type="password"
+                                        placeholder="Password"
+                                    />
+                                    <button
+                                        className="text-gray-100 mt-5 tracking-wide font-semibold bg-green-500 dark:bg-green-600 w-full py-3 rounded-lg flex items-center justify-center focus:ring-4
+                                    focus:ring-green-500/50 dark:focus:ring-green-600/40 focus:outline-none"
+                                    >
+                                        <svg
+                                            className="w-6 h-6 -ml-2"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        >
+                                            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                            <circle cx="8.5" cy="7" r="4" />
+                                            <path d="M20 8v6M23 11h-6" />
+                                        </svg>
+                                        <span className="ml-">Sign In</span>
+                                    </button>
+                                    <p className="mt-6 text-sm text-gray-600 dark:text-white text-center">
+                                        Don't have an account?{" "}
+                                        <a
+                                            href="/register"
+                                            className="underline"
+                                        >
+                                            Create one
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex-1 bg-green-300 dark:bg-green-400 text-center hidden lg:flex">
+                        <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat bg-[url('/images/login_bg.webp')]"></div>
                     </div>
                 </div>
-
-                <div className="mx-auto max-w-xs">
-                  <input
-                    className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
-                    type="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
-                    type="password"
-                    placeholder="Password"
-                  />
-                  <button
-                    className="text-gray-100 mt-5 tracking-wide font-semibold bg-green-500 dark:bg-green-600 w-full py-3 rounded-lg flex items-center justify-center focus:ring-4
-                                    focus:ring-green-500/50 dark:focus:ring-green-600/40 focus:outline-none"
-                  >
-                    <svg
-                      className="w-6 h-6 -ml-2"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                      <circle cx="8.5" cy="7" r="4" />
-                      <path d="M20 8v6M23 11h-6" />
-                    </svg>
-                    <span className="ml-">Sign In</span>
-                  </button>
-                  <p className="mt-6 text-sm text-gray-600 dark:text-white text-center">
-                    Don't have an account?{" "}
-                    <a
-                      href="/register"
-                      className="border-b border-gray-500 underline"
-                    >
-                      Create one
-                    </a>
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-          <div className="flex-1 bg-green-300 dark:bg-green-400 text-center hidden lg:flex">
-            <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat bg-[url('/images/login_bg.webp')]"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-  );
+        </main>
+    );
 }
