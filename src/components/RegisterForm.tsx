@@ -1,8 +1,8 @@
 export default function RegisterForm() {
     return (
         <main>
-            <div className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex justify-center">
-                <div className="max-w-screen-xl m-5 bg-white dark:bg-gray-700 shadow rounded-lg overflow-hidden flex justify-center flex-1">
+            <div className="bg-gray-100 my-[64px] dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center">
+                <div className="max-w-screen-xl m-5 bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden flex justify-center flex-1">
                     <div className="lg:w-1/2 xl:w-5/12 px-12 py-8">
                         <div className="flex flex-col items-center">
                             <div className="w-full flex-1 mt-8">
@@ -38,28 +38,28 @@ export default function RegisterForm() {
                                 </div>
 
                                 <div className="my-12 border-b text-center">
-                                    <div className="leading-none px-2 inline-block text-sm text-gray-600 dark:text-white tracking-wide font-medium bg-white dark:bg-gray-700 transform translate-y-1/2">
+                                    <div className="leading-none px-2 inline-block text-sm text-gray-600 dark:text-white tracking-wide font-medium bg-white dark:bg-gray-800 transform translate-y-1/2">
                                         Or sign up with e-mail
                                     </div>
                                 </div>
 
                                 <div className="mx-auto max-w-xs">
                                     <input
-                                        className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
+                                        className="dark:text-gray-200 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400"
                                         type="email"
                                         id="email"
                                         name="email"
                                         placeholder="Email"
                                     />
                                     <input
-                                        className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
+                                        className="dark:text-gray-200 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400"
                                         type="password"
                                         id="password"
                                         name="password"
                                         placeholder="Password"
                                     />
                                     <input
-                                        className="dark:text-gray-300 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-300"
+                                        className="dark:text-gray-200 w-full px-6 py-3 rounded-lg font-medium bg-gray-100 placeholder-gray-500 text-sm focus:outline-none mt-5 focus:ring-2 focus:ring-green-400 border border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:placeholder-gray-400"
                                         type="password"
                                         id="confirm-password"
                                         name="confirm-password"
@@ -85,10 +85,7 @@ export default function RegisterForm() {
                                     </button>
                                     <p className="mt-6 text-sm text-gray-600 dark:text-white text-center">
                                         Already have an account?
-                                        <a
-                                            href="/login"
-                                            className="border-b border-gray-500 underline"
-                                        >
+                                        <a href="/login" className="underline">
                                             {" "}
                                             sing in
                                         </a>
