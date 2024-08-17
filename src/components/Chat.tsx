@@ -44,7 +44,7 @@ export default function Chat() {
                 <nav>
                     <ul className="w-full flex justify-evenly items-center text-white h-12 text-lg bg-green-300 dark:bg-green-600">
                         <li className="">
-                            <a href="#">All</a>
+                            <a href="#">View All</a>
                         </li>
                         <li className="">
                             <a href="#">Unread</a>
