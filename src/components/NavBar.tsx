@@ -1,6 +1,6 @@
 export default function NavBar() {
     return (
-        <header className="flex justify-between py-3 px-4 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 gap-6">
+        <header className="flex justify-between py-3 px-4 h-16 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-600 gap-6 fixed top-0 left-0 right-0 z-10">
             <div className="flex items-center gap-3">
                 <img
                     src="/logo.svg"
