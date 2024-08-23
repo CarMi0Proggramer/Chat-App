@@ -27,7 +27,7 @@ export default function BottomNavigation() {
                 <div className="flex items-center justify-center">
                     <button
                         type="button"
-                        className="inline-flex items-center justify-center size-10 font-medium bg-green-600 rounded-full hover:bg-green-700 group focus:ring-4 focus:ring-green-400 focus:outline-none dark:focus:ring-green-500"
+                        className="inline-flex items-center justify-center size-10 font-medium bg-green-600 rounded-full focus:ring-4 focus:ring-green-400 focus:outline-none dark:focus:ring-green-600/40"
                     >
                         <svg
                             className="size-4 text-white"
