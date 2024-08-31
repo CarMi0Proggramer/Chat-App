@@ -4,7 +4,7 @@ export default function BottomNavigation() {
     return (
         <footer className="fixed z-50 w-full h-16 -translate-x-1/2 bg-white border border-gray-200  bottom-0 left-1/2 dark:bg-gray-800 dark:border-gray-600">
             <div className="grid h-full grid-cols-5 mx-auto">
-                <BottomNavigationElement href="/">
+                <BottomNavigationElement href="/" title="Home">
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
                         aria-hidden="true"
@@ -14,7 +14,7 @@ export default function BottomNavigation() {
                         <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
                     </svg>
                 </BottomNavigationElement>
-                <BottomNavigationElement href="/chats">
+                <BottomNavigationElement href="/chats" title="Chats">
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
                         aria-hidden="true"
@@ -47,7 +47,7 @@ export default function BottomNavigation() {
                         <span className="sr-only">New item</span>
                     </button>
                 </div>
-                <BottomNavigationElement href="/settings">
+                <BottomNavigationElement href="/settings" title="Settings">
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
                         aria-hidden="true"
@@ -63,7 +63,7 @@ export default function BottomNavigation() {
                         />
                     </svg>
                 </BottomNavigationElement>
-                <BottomNavigationElement href="/profile">
+                <BottomNavigationElement href="/profile" title="Profile">
                     <svg
                         className="size-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-700 dark:group-hover:text-green-500"
                         aria-hidden="true"
