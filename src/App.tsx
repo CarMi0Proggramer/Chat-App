@@ -8,6 +8,7 @@ const Settings = lazy(() => import("./pages/Settings"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Register = lazy(() => import("./pages/Register"));
 const Login = lazy(() => import("./pages/Login"));
+const NotFound = lazy(() => import("./pages/404"))
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/chats" element={<Chats />} />
                         <Route path="/settings" element={<Settings />} />
                         <Route path="/profile" element={<Profile />} />
+                        <Route path="/*" element={<NotFound />} />
                     </Routes>
                 </Suspense>
             </Router>
