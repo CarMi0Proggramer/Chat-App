@@ -1,6 +1,5 @@
-import Chat from "../components/Chat";
-
 import Layout from "../layouts/Layout";
+import MessagePreview from "../components/MessagePreview";
 
 export default function Chats() {
     return (
@@ -21,7 +20,42 @@ export default function Chats() {
                         </ul>
                     </nav>
                 </section>
-                <Chat />
+                <section className="dark:text-gray-300 w-full flex flex-col">
+                    <MessagePreview
+                        name="Kevin Da Silva"
+                        preview="Ya completaste las tareas acuerdate que tienes que estudiar historia o si no no vas a poder ir a la universidad porque para programar hace falta que sepas historia."
+                        lastTime="5:12pm"
+                        url=""
+                    />
+                    <MessagePreview
+                        name="Kevin Da Silva"
+                        preview="Ya completaste las tareas acuerdate que tienes que estudiar historia o si no no vas a poder ir a la universidad porque para programar hace falta que sepas historia."
+                        lastTime="5:12pm"
+                        url=""
+                        unReadMessages={3}
+                    />
+                    <MessagePreview
+                        name="Kevin Da Silva"
+                        preview="Ya completaste las tareas acuerdate que tienes que estudiar historia o si no no vas a poder ir a la universidad porque para programar hace falta que sepas historia."
+                        lastTime="5:12pm"
+                        url=""
+                        unReadMessages={3}
+                    />
+                    <MessagePreview
+                        name="Kevin Da Silva"
+                        preview="Ya completaste las tareas acuerdate que tienes que estudiar historia o si no no vas a poder ir a la universidad porque para programar hace falta que sepas historia."
+                        lastTime="5:12pm"
+                        url=""
+                        unReadMessages={3}
+                    />
+                    <MessagePreview
+                        name="Kevin Da Silva"
+                        preview="Ya completaste las tareas acuerdate que tienes que estudiar historia o si no no vas a poder ir a la universidad porque para programar hace falta que sepas historia."
+                        lastTime="5:12pm"
+                        url=""
+                        unReadMessages={3}
+                    />
+                </section>
             </main>
         </Layout>
     );
